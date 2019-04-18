@@ -81,19 +81,52 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/js/bottom.js":
+/*!**************************!*\
+  !*** ./src/js/bottom.js ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"1、学习学习webpack\")\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log(\"3、bottom.js偶\")\n\n//# sourceURL=webpack:///./src/js/bottom.js?");
+
+/***/ }),
+
+/***/ "./src/js/head.js":
+/*!************************!*\
+  !*** ./src/js/head.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("console.log(\"2、head.js偶\")\n\n//# sourceURL=webpack:///./src/js/head.js?");
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("console.log(\"1、学习学习webpack\")\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*******************************************************************!*\
+  !*** multi ./src/js/index.js ./src/js/head.js ./src/js/bottom.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/js/index.js */\"./src/js/index.js\");\n__webpack_require__(/*! ./src/js/head.js */\"./src/js/head.js\");\nmodule.exports = __webpack_require__(/*! ./src/js/bottom.js */\"./src/js/bottom.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.js_./src/js/head.js_./src/js/bottom.js?");
 
 /***/ })
 
