@@ -4,7 +4,7 @@ const path=require("path");
 module.exports = {
     mode:"development",
     //因为版本问题，现在需要将入口文件放到src下
-    entry:"./src/index.js",
+    entry:["./src/js/index.js","./src/js/head.js","./src/js/bottom.js"],
     output:{
         path:path.resolve(__dirname,"build"),
         filename:"bundle.js"
