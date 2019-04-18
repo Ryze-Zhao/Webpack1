@@ -1,6 +1,7 @@
 //因为出口要绝对路径，所以需要引入node的path模块
 const path=require("path");
 module.exports = {
+    mode:"development",
     //因为版本问题，现在需要将入口文件放到src下
     entry:"./src/index.js",
     output:{
